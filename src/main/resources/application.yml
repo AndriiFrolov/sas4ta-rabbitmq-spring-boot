@@ -1,0 +1,15 @@
+spring:
+    rabbitmq:
+      addresses: amqps://inyuqldo:6HyvxRtVvofCOChYEoXB62TGsc2Z20jm@cattle.rmq2.cloudamqp.com/inyuqldo
+      host: cattle.rmq2.cloudamqp.com
+
+app:
+  config:
+    timeout:
+      min: 1
+      max: 5
+    rabbitmq:
+      queue: spring-boot
+      exchange: spring-boot-exchange
+      routing:
+        key: sas.4.ta
